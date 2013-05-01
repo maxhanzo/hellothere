@@ -12,9 +12,7 @@
 @property (nonatomic, retain) CLLocationManager *locationManager;
 @property (nonatomic, assign) id <MyCLControllerDelegate> delegate;
 
-- (void)locationManager:(CLLocationManager *)manager
-	didUpdateToLocation:(CLLocation *)newLocation
-		   fromLocation:(CLLocation *)oldLocation;
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations;
 
 - (void)locationManager:(CLLocationManager *)manager
 	   didFailWithError:(NSError *)error;
